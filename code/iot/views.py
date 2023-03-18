@@ -41,13 +41,13 @@ class HeartbeatView(APIView):
     def post(self, request, *args, **kwargs):
         global DF
         payload = json.loads(request.body)
-        print(payload)
+        # print(payload)
         self.all_hb.debug(payload)
         
-        payload_str = payload['payload']
-        payload_dict = json.loads(payload_str)
-        scales_data = payload_dict['scales']
-        machineId_data = payload_dict['machineId']
+        # payload_str = payload['payload']
+        # payload_dict = json.loads(payload_str)
+        scales_data = payload['scales']
+        machineId_data = payload['machineId']
         scales_df = pd.DataFrame(scales_data, columns=['scaleId', 'minWeight', 'maxWeight', 'currentWeight'])
         scales_df = scales_df.drop(columns=['minWeight','maxWeight'])
         scales_df[['currentWeight']] = scales_df[['currentWeight']].apply(pd.to_numeric)
