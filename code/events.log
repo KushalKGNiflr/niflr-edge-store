@@ -1,0 +1,17 @@
+2023-03-16 15:05:49,024 - events - INFO - Login Event - Entry request received, ID: 310f7153-1182-4e3b-b3a7-3115c00edacf, Role: customer
+2023-03-16 15:05:49,034 - events - INFO - Login Event - Status: Access Denied!!! System under Refillment Mode
+2023-03-16 15:06:00,091 - events - INFO - Login Event - Entry request received, ID: 188ea896-286f-46d3-88a0-80160255fbce, Role: admin
+2023-03-16 15:06:00,103 - events - INFO - Login Event - Status: User Session Created
+2023-03-16 15:06:16,287 - events - INFO - Weight Change Event - First iteration
+2023-03-16 15:06:33,017 - events - INFO - Weight Change Event - Data is different from previous request
+2023-03-16 15:06:33,032 - events - INFO - 
+  scaleId  currentWeight_x  currentWeight_y  weight_change
+0     001            1.505            1.705           -0.2
+1     002            1.222            1.022            0.2
+2     003            3.400            3.900           -0.5
+2023-03-16 15:06:33,045 - events - INFO - Weight Change Event - Item placed, weight change detected
+2023-03-16 15:06:33,047 - events - INFO - Weight Change Event - Item picked, weight change detected
+2023-03-16 15:06:33,048 - events - INFO - Weight Change Event - Item placed, weight change detected
+2023-03-16 15:06:47,359 - events - INFO - Logout Event - Exit request received, ID: 310f7153-1182-4e3b-b3a7-3115c00edacf, Role: customer
+2023-03-16 15:06:47,372 - events - INFO - Logout Event - Exit User Session created
+2023-03-16 15:06:47,375 - events - INFO - Logout Event - User cycle created for ID: 310f7153-1182-4e3b-b3a7-3115c00edacf, with Login time: 2023-03-16 07:47:39.713001+0000 and Logout time: 2023-03-16 15:06:47.370034+0530

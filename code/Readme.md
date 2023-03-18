@@ -1,0 +1,1 @@
+./manage.py createsuperuser --username niflr_admin --email dev@niflr.com
