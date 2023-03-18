@@ -71,12 +71,12 @@ class HeartbeatView(APIView):
                 print(session_id)
 
                 for i in range(nor):
-                    if DF_Final.weight_change[i]>=0.01:
+                    if DF_Final.weight_change[i]>=0.03:
                         print("Item picked, weight change detected")
                         self.logger.debug("Item picked, weight change detected")
                         create_weight_change_event(str(machineId_data), str(DF_Final.scaleId[i]), DF_Final.weight_change[i], PICK, str(session_id))
                         
-                    elif DF_Final.weight_change[i]<=-0.01:
+                    elif DF_Final.weight_change[i]<=-0.03:
                         print("Item placed, weight change detected")
                         self.logger.debug("Item placed, weight change detected")
                         create_weight_change_event(str(machineId_data), str(DF_Final.scaleId[i]), (DF_Final.weight_change[i])*(-1), PLACE, str(session_id))                        
