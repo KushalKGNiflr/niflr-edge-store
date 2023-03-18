@@ -12,5 +12,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('api/machines/heartbeat', views.HeartbeatView.as_view(), name='heartbeat'),
     path('api/machines/lock', views.lock.as_view(), name='lock'),
+    path('/api/machines/1644496921479/status', views.status.as_view(), name='status'),
     path('mode-control/', views.ModeControlView.as_view(), name='mode-control'),
 ]
