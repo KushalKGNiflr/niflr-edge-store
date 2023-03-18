@@ -103,5 +103,5 @@ class lock(APIView):
         return HttpResponse(json.dumps({'status': 'success'}), content_type='application/json')
     
 class status(APIView):
-    def post(self):
+    def get(self, request):
         return HttpResponse(json.dumps({'status': 'success'}), content_type='application/json')
