@@ -28,6 +28,6 @@ class StoreSessions(models.Model):
 
 class StoreModeChange(models.Model):
     id = models.UUIDField(null=False, primary_key=True, default=uuid.uuid4)
-    store_id = models.UUIDField(null=False)
+    store_id = models.UUIDField(null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     status = models.CharField(null=False, max_length=255)
