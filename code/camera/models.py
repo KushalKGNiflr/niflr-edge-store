@@ -33,8 +33,8 @@ class Cameras(models.Model):
     company = models.CharField(null=True, max_length=100)
     store_id = models.UUIDField(null=True)
     operation_status = models.CharField(null=True, max_length=100) #ON, OFF
-    machine_id = models.CharField(null=True, max_length=100)    
-    rtsp_path = models.CharField(null=True, max_length=100) 
+    associated_machines = models.CharField(null=True, max_length=100)    
+    rtmp_path = models.CharField(null=True, max_length=100) 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True) 
 
