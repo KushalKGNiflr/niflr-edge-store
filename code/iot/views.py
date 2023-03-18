@@ -41,7 +41,7 @@ class HeartbeatView(APIView):
     def post(self, request, *args, **kwargs):
         global DF
         payload = json.loads(request.body)
-
+        print(payload)
         self.all_hb.debug(payload)
         
         payload_str = payload['payload']
