@@ -97,3 +97,7 @@ class ModeControlView(APIView):
         create_mode_control(str(status))
         create_store_session(str(status))
         return HttpResponse(json.dumps({'status': 'success'}), content_type='application/json')
+    
+class lock(APIView):
+    def post(self, request):
+        return HttpResponse(json.dumps({'status': 'success'}), content_type='application/json')
